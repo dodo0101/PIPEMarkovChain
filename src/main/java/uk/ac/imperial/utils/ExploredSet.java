@@ -89,6 +89,7 @@ public final class ExploredSet {
         int location = getLocation(state);
         TreeMap<WrappedHash, Integer> structure = array.get(location);
         WrappedHash wrappedHash = new WrappedHash(state.secondaryHash());
+        int i = 0;
         return structure.containsKey(wrappedHash);
     }
 
